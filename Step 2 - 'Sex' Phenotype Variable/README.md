@@ -1,0 +1,5 @@
+# Step 2: 'Sex' Phenotype Variable - Script Outline
+
+The raw phenotype data file (.csv and .R) acquired from UKBB consisted of a single data frame containing 4710 column variables and 502,536 individual rows of data. A html file was provided for reference briefly outlining what each column represented. Due to several erroneous complications and troubleshooting attempts during QC checks regarding the format of the file and datatype class of each variable. The data type class for each 4710 variables was obtained as a list and converted into an R compatible data class type. The UKK phenotype data was then read in and loaded as a .tab file with the column class conversions applied. At this stage several QC checks for layout and dealing with NA and missing values were also checked and dealt with. An external read in file package was used to reduce the file read in time by ~90%. From this UKBB phenotype data table, the Sample ID and Sex variable columns were selected out, re-named, and re-assigned, ensuring each variable remained the correct datatype. 
+
+
